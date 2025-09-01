@@ -58,7 +58,7 @@ You should have:
 ├── 1-index.html          # Enhancement - Semantic elements
 ├── 2-index.html          # Optimization - SEO & accessibility
 ├── 3-index.html          # Mastery - Advanced features
-└ README.md             # This file
+└ README.md               # This file
 ```
 
 ## 🎯 Task Breakdown
