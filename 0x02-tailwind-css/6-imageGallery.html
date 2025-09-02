@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout with Image Gallery</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+            <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="mt-8">
+        <h2 class="text-2xl font-bold mb-4 text-center">Image Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop" alt="Mountain landscape with snow peaks" class="w-full h-auto rounded-lg shadow-md">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop" alt="Sunlight through forest trees" class="w-full h-auto rounded-lg shadow-md">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&h=200&fit=crop" alt="Ocean waves crashing on beach" class="w-full h-auto rounded-lg shadow-md">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=300&h=200&fit=crop" alt="City skyline at sunset" class="w-full h-auto rounded-lg shadow-md">
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=300&h=200&fit=crop" alt="Desert sand dunes" class="w-full h-auto rounded-lg shadow-md">
+            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=300&h=200&fit=crop" alt="Waterfall in tropical forest" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>
