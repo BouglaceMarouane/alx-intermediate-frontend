@@ -1,0 +1,30 @@
+SASS Installation Steps
+
+1. Linux Installation (Optional):
+   - Open Ubuntu terminal
+   - Install Node Version Manager (nvm) version 0.39.7:
+     $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   - Exit the terminal using the exit command
+   - Reopen the terminal
+   - Install Node.js version 20.16 using nvm:
+     $ nvm install 20.16
+     $ nvm use 20.16
+
+2. Installation Anywhere (Optional):
+   - Ensure Node.js is installed on your system
+   - Install SASS version 3.7.4 globally using npm:
+     $ npm install sass -g
+   - Or install SASS version 3.7.4 locally in your project:
+     $ npm install sass@3.7.4
+
+3. Verify Installation:
+   - Check SASS version:
+     $ sass --version
+   - Should output: 3.7.4 (or similar version)
+
+4. Alternative Installation Methods:
+   - Using yarn: $ yarn global add sass@3.7.4
+   - Using pnpm: $ pnpm add -g sass@3.7.4
+   - Download from official website: https://sass-lang.com/install
+
+Note: The installation steps may vary depending on your operating system and package manager preferences.
